@@ -1,0 +1,14 @@
+
+body {
+    background-color: bisque;
+    font-family: cursive;
+}
+#head {
+    color:rgb(7, 34, 70);
+    text-align: center;
+}
+content {
+    color:rgb(44, 22, 88);
+    text-align: justify;
+    margin-bottom: 12px;
+}

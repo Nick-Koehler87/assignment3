@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <!-- this one creates the textbox, the ids are important to reference the objects in other parts of the code-->
+        <input id="name-input" type="text" placeholder="Enter your name" />
+        <!-- this one makes the button lol-->
+        <button id="my-button">Click Me</button>
+
+        <script>
+            //these 2 lines create reference variables to the button and textbox objects
+            var myButton = document.querySelector('#my-button');
+            var nameInput = document.querySelector('#name-input');
+
+            //this function is called when the object refrenced by myButton is clicked. it could be a button or any other object
+            myButton.addEventListener('click', function () {
+                //if statement to ensure the text box has text in it
+                if (nameInput.value !== '') {
+                    // creates the pop up
+                    alert('Hello ' + nameInput.value);
+                }
+            });
+        </script>
+    </body>
+</html>
